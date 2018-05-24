@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>個人頁面 | NCKU HUB</title>
+
+  <!-- Add to homescreen for Chrome on Android -->
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" sizes="192x192" href="images/NCKU HUB_ICON.png">
+
+<!-- Add to homescreen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title">
+<link rel="apple-touch-icon-precomposed" href="images/NCKU HUB_ICON.png">
+
+<!-- Tile icon for Win8 (144x144 + tile color) -->
+<meta name="msapplication-TileImage" content="images/NCKU HUB_ICON.png">
+<meta name="msapplication-TileColor" content="#3372DF">
+
+<link rel="shortcut icon" href="images/NCKU HUB_ICON.png">
+
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body class="grey lighten-3" style="font-family:Microsoft JhengHei">
+
+    <div class="navbar-fixed">
+    <nav class="blue" role="navigation">
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons white-text">menu</i></a>
+        <a id="logo-container" href="#" style="font-size:17px; font-weight: lighter;letter-spacing: 2px;"><strong>個人頁面</strong></a>
+    </nav>
+    </div>
+
+    <ul id="slide-out" class="sidenav">
+      <li>
+        <div class="user-view row">
+          <div class="background  blue"></div>
+          <div class="col s12" id="user-info" style="margin-left:6px;margin-top:8px;">
+              <img class="right" src="images/NCKU HUB_ICON.png" style="width:15%;height:15%;" border="0"></img>
+              <img class="circle" src="images/profile.jpg" style="width:40%;height:40%; " border="0"></img>
+              <span class="white-text" style="font-weight: lighter;"><h5 style="font-size:1.5rem">許庭禎</h5></span>
+              <span class="white-text" style="font-weight: lighter;"><p style="line-height:1rem">工業與資訊管理學系</p></span>
+              <span class="white-text" style="font-weight: lighter;"><p style="line-height:1rem">三年級</p></span>
+          </div>
+        </div>
+      </li>
+
+      <li><a href="#!">提供心得</a></li>
+      <li><a href="person.html">個人頁面</a></li>
+      <li><a href="#!">關於我們</a></li>
+      <li><a href="#!">回報問題</a></li>
+      <li><a href="#!">登出系統</a></li>
+      <li style="position:absolute;bottom:10%;"><a href="#!">發案子給我們!</a></li>
+
+    </ul>
+
+
+    <div class="col s12 m7">
+      <div class="card" style=" margin: 0rem 0  0rem 0;">
+        <div class="card-image">
+          <img src="images/profile.jpg">
+        </div>
+        <div class="card-content">
+          <span class="black-text" ><h5><strong>許庭禎</strong></h5></span>
+          <span class="grey-text" ><h6>工業與資訊管理學系</h6></span>
+          <span class="grey-text" ><h6>三年級</h6></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large waves-effect waves-light modal-trigger light-blue darken-4" href="#setting">
+        <i class="large material-icons">create</i>
+      </a>
+    </div>
+
+    <div id="setting" class="modal bottom-sheet grey-text darken-1">
+      <div class="white" style="margin-top:-6px">
+        <ul class="collection collapsible">
+          <a href="#!" id="write_review" class="collection-item grey-text">
+            <i class="material-icons" style="font-size:1.5rem">assignment</i>
+            <span class="title">寫課程心得</span>
+          </a>
+          <a href="#!" id="upload_pic" class="collection-item grey-text">
+            <i class="material-icons" style="font-size:1.5rem">photo</i>
+            <span class="title">上傳新頭貼</span>
+          </a>
+          <!--<li class="active">
+            <div class="collapsible-header grey-text">
+              <i class="material-icons" style="font-size:1.5rem">account_box</i>
+              <span class="title">修改個人資料</span>
+            </div>
+            <div class="collapsible-body">
+              <form class="col s12">
+                <div class="row" style="margin-top:-35px">
+                  <div class="input-field col s6 push-s1">
+                    <input placeholder="姓名" id="name" type="text" class="validate">
+                    <label for="name"></label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s6 push-s1"style="margin-top:-35px">
+                    <input placeholder="學系" id="department" type="text" class="validate">
+                    <label for="department"></label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s6 push-s1"style="margin-top:-35px">
+                    <input placeholder="年級" id="grade" type="text" class="validate">
+                    <label for="grade"></label>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </li>-->
+            <a href="#!" id="modify_profile" class="collection-item grey-text">
+              <i class="material-icons" style="font-size:1.5rem">account_box</i>
+              <span class="title">修改個人資料</span>
+              <form class="col s12">
+                <div class="row" style="margin-top:-5px">
+                  <div class="input-field col s6 push-s1">
+                    <input placeholder="姓名" id="name" type="text" class="validate">
+                    <label for="name"></label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s6 push-s1"style="margin-top:-35px">
+                    <input placeholder="學系" id="department" type="text" class="validate">
+                    <label for="department"></label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s6 push-s1"style="margin-top:-35px">
+                    <input placeholder="年級" id="grade" type="text" class="validate">
+                    <label for="grade"></label>
+                  </div>
+                </div>
+              </form>
+            </a>
+        </ul>
+      </div>
+    </div>
+
+  <div id="index-banner" class="parallax-container">
+
+      <div class="col-s12">
+        <h6  class="grey-text darken-1" style="margin-left:15px">已提供心得</h6>
+      </div>
+    <ul class="collection">
+      <li class="collection-item avatar">
+        <i class="material-icons circle">工</i>
+        <span class="title black-text" style="vertical-align: top; padding-top: 2px; display: inline-block;">微積分 (一)</span>
+        <p class="grey-text">蕭仁傑</p>
+        <div class="grey-text secondary-content dividerV"></div>
+        <i class="material-icons secondary-content left " style="font-size:1.2rem;margin-right:70px;margin-top:15px;color:rgba(235, 237, 239,.9)">assignment</i>
+        <span class="grey-text secondary-content" style="vertical-align: top; display: inline-block;border-left:light">H3 006</br>工資系</span>
+      </li>
+      <li class="collection-item avatar">
+        <i class="material-icons circle red">通</i>
+        <span class="title black-text" style="vertical-align: top; padding-top: 2px; display: inline-block;">微積分 (一)</span>
+        <p class="grey-text">蕭仁傑</p>
+        <div class="grey-text secondary-content dividerV"></div>
+        <span class="grey-text secondary-content" style="vertical-align: top; display: inline-block;">H3 006</br>工資系</span>
+      </li>
+      <li class="collection-item avatar">
+        <i class="material-icons circle">工</i>
+        <span class="title black-text" style="vertical-align: top; padding-top: 2px; display: inline-block;">微積分 (一)</span>
+        <p class="grey-text">蕭仁傑</p>
+        <div class="grey-text secondary-content dividerV"></div>
+        <span class="grey-text secondary-content" style="vertical-align: top; display: inline-block;">H3 006</br>工資系</span>
+      </li>
+    </ul>
+
+    <h6  class="grey-text" style="margin-left:15px">編輯中心得</h6>
+    <ul class="collection">
+      <li class="collection-item avatar">
+        <i class="material-icons circle">工</i>
+        <span class="title black-text" style="vertical-align: top; padding-top: 2px; display: inline-block;">微積分 (一)</span>
+        <p class="grey-text">蕭仁傑</p>
+        <div class="grey-text secondary-content dividerV"></div>
+        <i class="material-icons secondary-content left " style="font-size:1.2rem;margin-right:70px;margin-top:15px;color:rgba(235, 237, 239,.9)">assignment</i>
+        <span class="grey-text secondary-content" style="vertical-align: top; display: inline-block;border-left:light">H3 006</br>工資系</span>
+      </li>
+      <li class="collection-item avatar">
+        <i class="material-icons circle">工</i>
+        <span class="title black-text" style="vertical-align: top; padding-top: 2px; display: inline-block;">微積分 (一)</span>
+        <p class="grey-text">蕭仁傑</p>
+        <div class="grey-text secondary-content dividerV"></div>
+        <span class="grey-text secondary-content" style="vertical-align: top; display: inline-block;">H3 006</br>工資系</span>
+      </li>
+      <li class="collection-item avatar">
+        <i class="material-icons circle">工</i>
+        <span class="title black-text" style="vertical-align: top; padding-top: 2px; display: inline-block;">微積分 (一)</span>
+        <p class="grey-text">蕭仁傑</p>
+        <div class="grey-text secondary-content dividerV"></div>
+        <span class="grey-text secondary-content" style="vertical-align: top; display: inline-block;">H3 006</br>工資系</span>
+      </li>
+      <a class="collection-item center red-text" style="font-size:1.25rem;color:#F35A5A;">全部刪除</a>
+    </ul>
+  </div>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  </body>
+</html>

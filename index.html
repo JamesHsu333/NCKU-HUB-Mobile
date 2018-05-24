@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>首頁 | NCKU HUB</title>
+
+  <!-- Add to homescreen for Chrome on Android -->
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" sizes="192x192" href="images/NCKU HUB_ICON.png">
+
+<!-- Add to homescreen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" >
+<link rel="apple-touch-icon-precomposed" href="images/NCKU HUB_ICON.png">
+
+<!-- Tile icon for Win8 (144x144 + tile color) -->
+<meta name="msapplication-TileImage" content="images/NCKU HUB_ICON.png">
+<meta name="msapplication-TileColor" content="#3372DF">
+ 
+<link rel="shortcut icon" href="images/NCKU HUB_ICON.png">
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body style="font-family:Microsoft JhengHei">
+
+  <div class="navbar-fixed">
+    <nav class="blue" role="navigation">
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons white-text">menu</i></a>
+        <a id="logo-container" href="#" style="font-size:17px; font-weight: lighter;letter-spacing: 2px;"><strong>首頁</strong></a>
+    </nav>
+  </div>
+
+  <ul id="slide-out" class="sidenav">
+    <li>
+      <div class="user-view row">
+        <div class="background  blue"></div>
+        <div class="col s12" id="user-info" style="margin-left:6px;margin-top:8px;">
+            <img class="right" src="images/NCKU HUB_ICON.png" style="width:15%;height:15%;" border="0"></img>
+            <img class="circle" src="images/profile.jpg" style="width:40%;height:40%; " border="0"></img>
+            <span class="white-text" style="font-weight: lighter;"><h5 style="font-size:1.5rem">許庭禎</h5></span>
+            <span class="white-text" style="font-weight: lighter;"><p style="line-height:1rem">工業與資訊管理學系</p></span>
+            <span class="white-text" style="font-weight: lighter;"><p style="line-height:1rem">三年級</p></span>
+        </div>
+      </div>
+    </li>
+
+    <li><a href="#!">提供心得</a></li>
+    <li><a href="person.html">個人頁面</a></li>
+    <li><a href="#!">關於我們</a></li>
+    <li><a href="#!">回報問題</a></li>
+    <li><a href="#!">登出系統</a></li>
+    <li style="position:absolute;bottom:10%;"><a href="#!">發案子給我們!</a></li>
+
+  </ul>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="parallax"><img src="images/NCKU HUB-39-1.png" style="height:70%"></div>
+    <div class="section no-pad-bot">
+      <div class="container">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12" style="margin-top:425px">
+              <i class="material-icons prefix">search</i>
+              <input id="icon_prefix" type="text" class="validate">
+              <label for="icon_prefix"  style="font-size: 20px;font-weight: lighter;letter-spacing: 5px;">輸入欲查詢之課程/老師</label>
+            </div>
+          </div>
+        </form>
+        <br><br>
+      </div>
+    </div>
+  </div>
+
+  <div class="fixed-action-btn">
+  <a class="btn-floating btn-large waves-effect waves-light red accent-2">
+    <i class="large material-icons">add</i>
+  </a>
+</div>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  </body>
+</html>

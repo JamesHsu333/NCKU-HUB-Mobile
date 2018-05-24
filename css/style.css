@@ -1,0 +1,157 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+html {
+  height: 100%;
+}
+
+body {
+  /*font-family: "cwTeXYen", sans-serif;
+  font-weight: 300;*/
+  min-height: 100%;
+}
+
+
+.side-nav {
+  width: 75%;
+}
+
+.wrapper {
+    padding-left: 300px;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: white;
+}
+
+.blue {
+  background-color: #18ABD6  !important;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 100vh;
+  line-height: 0;
+  height: auto;
+    color: rgba(235, 237, 239,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+  .parallax img {
+      @media #{$small-and-down} { max-width: 200%; }
+      @media #{$medium-and-up} { width: 100%; }
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+/* label color */
+ .input-field label {
+   color: white;
+ }
+ /* label focus color */
+ .input-field input[type=text]:focus + label {
+   color: white;
+ }
+ /* label underline focus color */
+ .input-field input[type=text]:focus {
+   border-bottom: 1px solid white;
+   box-shadow: 0 1px 0 0 white;
+ }
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.fixed-action-btn{
+top:75%;/*desired value*/
+}
+
+.modal { max-height: 50% !important ; }
+#C_setting{ max-height: 280px !important ; }
+/*.dropdown-content {
+  width: 100% !important;
+  top: 55px !important;
+}
+.dropdown-content :hover{
+  background-color: white !important;
+}*/
+.dropdown-content {
+  width: 10px !important;
+}
+.sidenav{
+  width:75%;
+}
+.collection .collection-item.avatar:not(.circle-clipper) > .circle, .collection .collection-item.avatar :not(.circle-clipper) > .circle{
+  top: 13px;
+}
+.collection .collection-item.avatar{
+  min-height: auto;
+}
+.collection .collection-item.avatar i.circle{
+  line-height: 35px;
+}
+#upload_pic:not(.active):hover, #modify_profile:not(.active):hover{
+  background-color: white;
+  color: #1A6CBD !important;
+}
+#write_review:not(.active):hover{
+  background-color: white;
+  color: #F35A5A !important;
+}
+.noUi-target {
+  background: grey !important;
+}
+.noUi-connect{
+  background-color: white !important;
+}
+.noUi-horizontal .noUi-handle, .noUi-vertical .noUi-handle{
+  background-color: white !important;
+}
+.noUi-target.noUi-horizontal .noUi-tooltip{
+  background-color: white !important;
+
+}
+.noUi-tooltip{
+  color:#F35A5A !important;
+}
+.dividerV{
+    position:absolute;
+    margin-right: 60px;
+    top:30% !important;
+    bottom:25%;
+    border-left:1px solid;
+    color: rgba(235, 237, 239,.9) !important;
+}
+#search-page{
+    width:100%;
+}
