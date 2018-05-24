@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>提供課程 | NCKU HUB</title>
+
+  <!-- Add to homescreen for Chrome on Android -->
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" sizes="192x192" href="images/NCKU HUB_ICON.png">
+
+<!-- Add to homescreen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title">
+<link rel="apple-touch-icon-precomposed" href="images/NCKU HUB_ICON.png">
+
+<!-- Tile icon for Win8 (144x144 + tile color) -->
+<meta name="msapplication-TileImage" content="images/NCKU HUB_ICON.png">
+<meta name="msapplication-TileColor" content="#3372DF">
+
+<link rel="shortcut icon" href="images/NCKU HUB_ICON.png">
+
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/nouislider.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/jquery.upvote.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body class="grey lighten-3" style="font-family:Microsoft JhengHei">
+
+  <div class="navbar-fixed">
+    <nav class="provSearch_nav">
+      <div class="nav-wrapper white">
+        <form>
+          <div class="input-field">
+            <input placeholder="欲提供心得之課程" id="search" type="search" autofocus>
+            <label class="label-icon" for="search"><a href="javascript:history.back()"><i class="material-icons large" style="font-size:2rem">chevron_left</i></a></label>
+            <i class="material-icons" onclick="document.getElementById('search').value = ''">close</i>
+          </div>
+        </form>
+      </div>
+    </nav>
+    <nav class="provCourse_nav blue" style="display:none">
+      <div class="nav-wrapper">
+        <a class="sidenav-close search_nav_result_back" href="#!"><i class="material-icons white-text left" style="margin-left:15px;font-size:2rem">close</i></a>
+        <a id="logo-container" href="#" style="font-size:17px; font-weight: lighter;letter-spacing: 2px;"><strong>微積分(一)</strong></a>
+        <a href="#" class="send_review" style="float:right;margin-right:15px;"><i class="material-icons right">send</i></a>
+        <a href="#" class="close_result" style="float:right;margin-right:15px;"><i class="material-icons right">assignment_returned</i></a>
+      </div>
+    </nav>
+    <nav class="provCourse_nav_after blue" style="display:none">
+      <div class="nav-wrapper">
+        <a class="sidenav-close search_nav_result_back" href="#!"><i class="material-icons white-text left" style="margin-left:15px;font-size:2rem">menu</i></a>
+        <a id="logo-container" href="#" style="font-size:17px; font-weight: lighter;letter-spacing: 2px;"><strong>送出成功!</strong></a>
+        <a href="index.html" style="float:right;margin-right:15px;"><i class="material-icons right">done</i></a>
+      </div>
+      <div class="nav-content blue center" style="margin-top:-3px">
+        <div class="row">
+          <div class="col s12">
+            <h6 style="font-size: 1.3rem;">
+              你成功幫助了480位成大同學，</br>更了解他們感興趣的課程!恭喜!
+            </h6>
+          </div>
+          <div class="col s12">
+            <a href="provCourse.html" class="waves-effect waves-red btn center" style="background-color:white;color:#F35A5A;margin-top:10px">再填一門課</a>
+          </div>
+          <div class="col s12">
+            <a href="index.html" class="center close_grading" style="color:rgba(235, 237, 239,.9);">回首頁</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div id="search-page" class="sidenav grey lighten-3">
+    <nav>
+      <div class="nav-wrapper white">
+        <form>
+          <div class="input-field">
+            <input id="search" type="search" onblur="this.focus()" autofocus>
+            <label class="label-icon" for="search"><a class="sidenav-close" href="#!"><i class="material-icons large" style="font-size:2rem">chevron_left</i></a></label>
+            <i class="material-icons" onclick="document.getElementById('search').value = ''">close</i>
+          </div>
+        </form>
+      </div>
+    </nav>
+  </div>
+
+
+  <div id="index-banner" class="parallax-container provCourse_page" style="display:none">
+    <div class="row grey-text" style="padding-top:20px">
+      <div class="col s10 push-s1">
+        <p class="grey-text darken-1"style="line-height: 1.2rem">課程基本資訊</p>
+        <div class="input-field col s8">
+          <select>
+          <option value="">劉育佑</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          </select>
+        </div>
+        <div class="input-field col s4">
+          <select>
+          <option value="">106-1</option>
+          <option value="1">105-1</option>
+          <option value="2">104-1</option>
+          <option value="3">103-1</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="row black-text">
+      <div class="col s10 push-s1">
+        <p class="grey-text darken-1"style="line-height: 1.2rem">課程評分心得</p>
+      </div>
+      <div class="col s10 push-s1">
+        <div class="card" style="background-color:#1A6CBD">
+          <div class="card-content white-text center">
+             <div class="grading">
+               <div class="row">
+                 <div class="col s10">
+                   <p class="left" style="line-height: 1.2rem;">甜度</p>
+                 </div>
+                 <div class="col s2">
+                   <p id="grading1" style="line-height: 1.2rem;">0</p>
+                 </div>
+                 <div class="col s12">
+                   <div id="slider1" style="margin-top:14px"></div>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col s10">
+                   <p class="left" style="line-height: 1.2rem;">涼度</p>
+                 </div>
+                 <div class="col s2">
+                   <p id="grading2" style="line-height: 1.2rem;">0</p>
+                 </div>
+                 <div class="col s12">
+                   <div id="slider2" style="margin-top:14px"></div>
+                 </div>
+               </div>
+               <div class="row">
+                 <div class="col s10">
+                   <p class="left" style="line-height: 1.2rem;">推薦</p>
+                 </div>
+                 <div class="col s2">
+                   <p id="grading3" style="line-height: 1.2rem;">0</p>
+                 </div>
+                 <div class="col s12">
+                   <div id="slider3" style="margin-top:14px"></div>
+                 </div>
+               </div>
+             </div>
+          </div>
+          <div class="type-area white" style="background-color:#fff;height: 230px;max-height:1000px">
+            <div class="row">
+              <form class="col s10 push-s1">
+                <div class="input-field">
+                  <textarea placeholder="說些什麼吧..." id="first_name" name="message" rows="5" required="" maxlength="1000" class="materialize-textarea"></textarea>
+                  <label for="first_name"></label>
+                </div>
+              </form>
+            </div>
+         </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/courseInfo.js"></script>
+  <script src="js/nouislider.js"></script>
+  <script src="js/nouislider.min.js"></script>
+  <script src="js/jquery.upvote.js"></script>
+  <script src="js/wNumb.js"></script>
+  <script>
+  $('#search').keypress(function(e) {
+      code = e.keyCode ? e.keyCode : e.which; // in case of browser compatibility
+      if(code == 13) {
+          e.preventDefault();
+          $(".provSearch_nav").fadeOut(250).css("display","none");
+          $(".provCourse_nav").fadeIn(500).css("display","block");
+          $(".provCourse_page").fadeIn(500).css("display","block");
+
+          // do something
+          /* also can use return false; instead. */
+          }
+      });
+  $(".search_nav_result_back").click(function() {
+      $(".provCourse_nav").fadeOut(250).css("display","none");
+      $(".provCourse_page").fadeOut(250).css("display","none");
+      $(".provSearch_nav").fadeIn(500).css("display","block");
+      $("#search").focus();
+      });
+  $(".send_review").click(function() {
+      $(".provCourse_nav").fadeOut(250).css("display","none");
+      $(".provCourse_nav_after").fadeIn(500).css("display","block");
+  });
+
+  var slider1 = document.getElementById('slider1');
+  noUiSlider.create(slider1,{
+    start: 5,
+    connect: [true, false],
+    step: 1,
+    orientation: 'horizontal', // 'horizontal' or 'vertical'
+    range: {
+    'min': 0,
+    'max': 10
+    },
+    format: wNumb({
+      decimals: 0
+    })
+  });
+  var slider2 = document.getElementById('slider2');
+  noUiSlider.create(slider2,{
+    start: 5,
+    connect: [true, false],
+    step: 1,
+    orientation: 'horizontal', // 'horizontal' or 'vertical'
+    range: {
+    'min': 0,
+    'max': 10
+    },
+    format: wNumb({
+      decimals: 0
+    })
+  });
+  var slider3 = document.getElementById('slider3');
+  noUiSlider.create(slider3,{
+    start: 5,
+    connect: [true, false],
+    step: 1,
+    orientation: 'horizontal', // 'horizontal' or 'vertical'
+    range: {
+    'min': 0,
+    'max': 10
+    },
+    format: wNumb({
+      decimals: 0
+    })
+  });
+  var grading1 = document.getElementById('grading1');
+
+  slider1.noUiSlider.on('update', function( values, handle ) {
+	  grading1.innerHTML = values[handle];
+  });
+  var grading2 = document.getElementById('grading2');
+
+  slider2.noUiSlider.on('update', function( values, handle ) {
+	  grading2.innerHTML = values[handle];
+  });
+  var grading3 = document.getElementById('grading3');
+
+  slider3.noUiSlider.on('update', function( values, handle ) {
+	  grading3.innerHTML = values[handle];
+  });
+
+</script>
+
+  </body>
+</html>

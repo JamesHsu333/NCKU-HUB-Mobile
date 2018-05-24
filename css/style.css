@@ -155,3 +155,9 @@ top:75%;/*desired value*/
 #search-page{
     width:100%;
 }
+#provCourse{
+    width:100%;
+}
+ .modal-overlay{
+    background: none;
+ }
