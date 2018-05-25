@@ -36,7 +36,7 @@
       <div class="nav-wrapper">
         <a href="courseList.html"><i class="material-icons white-text left" style="margin-left:15px;font-size:2rem">chevron_left</i></a>
         <a style="font-size:17px; font-weight: lighter;letter-spacing: 2px;left:125px"><strong>課程資訊</strong></a>
-        <a href="#" data-target="search-page" class="sidenav-trigger show-on-large" style="float:right"><i class="material-icons right">search</i></a>
+        <a href="#" data-target="search-page" class="sidenav-trigger search_fixed_nav " style="float:right"><i class="material-icons right">search</i></a>
       </div>
     </nav>
   </div>
@@ -46,9 +46,9 @@
       <div class="nav-wrapper white">
         <form>
           <div class="input-field">
-            <input id="search" type="search" onblur="this.focus()" autofocus>
+            <input placeholder="搜尋課程" id="search" type="search" autofocus>
             <label class="label-icon" for="search"><a class="sidenav-close" href="#!"><i class="material-icons large" style="font-size:2rem">chevron_left</i></a></label>
-            <i class="material-icons" onclick="document.getElementById('search').value = ''">close</i>
+            <i class="material-icons elimate_string" onclick="document.getElementById('search').value = ''">close</i>
           </div>
         </form>
       </div>
@@ -326,6 +326,12 @@
   slider3.noUiSlider.on('update', function( values, handle ) {
 	  grading3.innerHTML = values[handle];
   });
+  $(".search_fixed_nav").click(function() {
+        $("#search").focus();
+    });
+  $(".elimate_string").click(function() {
+          $("#search").focus();
+    });
   $(".start_grading").click(function() {
         $(".start_grading").fadeOut(250).css("display","none");
         $(".grading").fadeIn(500).css("display","block");

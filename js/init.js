@@ -3,6 +3,7 @@
 
     $('.sidenav').sidenav();
     $('select').formSelect();
+    $('.carousel').carousel();
     $('#search-page').sidenav({
       edge: 'right',
       draggable:false
@@ -13,10 +14,6 @@
     $(".dropdown-trigger").dropdown({
       /*closeOnClick: false,
       hover: false*/
-    });
-    $(".Sorting_method_nav_R").dropdown({
-      closeOnClick: false,
-      hover: false
     });
 
   }); // end of document ready

@@ -152,6 +152,13 @@ top:75%;/*desired value*/
     border-left:1px solid;
     color: rgba(235, 237, 239,.9) !important;
 }
+.dividerV__li{
+    position:absolute;
+    margin-right: 60px;
+    top: 35%;
+    bottom: 70%;
+    border-left:5px solid;
+}
 #search-page{
     width:100%;
 }
@@ -160,4 +167,16 @@ top:75%;/*desired value*/
 }
  .modal-overlay{
     background: none;
+ }
+ .aboutUs__member__picture{
+    height:300px !important;
+ }
+ .aboutUs__member__picture > .carousel-item{
+    margin-top: -30px;
+ }
+ .aboutUs__member__info{
+    height:300px !important;
+ }
+ .aboutUs__works--active{
+   height: 62% !important;
  }

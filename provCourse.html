@@ -38,7 +38,7 @@
           <div class="input-field">
             <input placeholder="欲提供心得之課程" id="search" type="search" autofocus>
             <label class="label-icon" for="search"><a href="javascript:history.back()"><i class="material-icons large" style="font-size:2rem">chevron_left</i></a></label>
-            <i class="material-icons" onclick="document.getElementById('search').value = ''">close</i>
+            <i class="material-icons elimate_string" onclick="document.getElementById('search').value = ''">close</i>
           </div>
         </form>
       </div>
@@ -80,9 +80,9 @@
       <div class="nav-wrapper white">
         <form>
           <div class="input-field">
-            <input id="search" type="search" onblur="this.focus()" autofocus>
+            <input id="search" type="search" autofocus>
             <label class="label-icon" for="search"><a class="sidenav-close" href="#!"><i class="material-icons large" style="font-size:2rem">chevron_left</i></a></label>
-            <i class="material-icons" onclick="document.getElementById('search').value = ''">close</i>
+            <i class="material-icons elimate_string" onclick="document.getElementById('search').value = ''">close</i>
           </div>
         </form>
       </div>
@@ -182,6 +182,7 @@
   <script src="js/jquery.upvote.js"></script>
   <script src="js/wNumb.js"></script>
   <script>
+  $("#search").focus();
   $('#search').keypress(function(e) {
       code = e.keyCode ? e.keyCode : e.which; // in case of browser compatibility
       if(code == 13) {
@@ -194,6 +195,9 @@
           /* also can use return false; instead. */
           }
       });
+  $(".elimate_string").click(function() {
+          $("#search").focus();
+        });
   $(".search_nav_result_back").click(function() {
       $(".provCourse_nav").fadeOut(250).css("display","none");
       $(".provCourse_page").fadeOut(250).css("display","none");

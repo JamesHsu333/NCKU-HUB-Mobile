@@ -34,7 +34,7 @@
       <div class="nav-wrapper">
         <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons white-text">menu</i></a>
         <a class="modal-trigger brand-logo" id="logo-container" href="#C_setting" style="font-size:17px; font-weight: lighter;letter-spacing: 2px;left:125px"><strong>課程列表</strong><i class="material-icons right" style="margin-left:-1px">arrow_drop_down</i></a>
-        <a href="" data-target="search-page" class="sidenav-trigger" style="float:right"><i class="material-icons right">search</i></a>
+        <a href="" data-target="search-page" class="sidenav-trigger search_fixed_nav" style="float:right"><i class="material-icons right">search</i></a>
       </div>
     </nav>
   </div>
@@ -116,7 +116,7 @@
           <div class="input-field">
             <input placeholder="搜尋課程" id="search" type="search" autofocus>
             <label class="label-icon" for="search"><a class="sidenav-close" href="#!"><i class="material-icons large" style="font-size:2rem">chevron_left</i></a></label>
-            <i class="material-icons" onclick="document.getElementById('search').value = ''">close</i>
+            <i class="material-icons elimate_string" onclick="document.getElementById('search').value = ''">close</i>
           </div>
         </form>
       </div>
@@ -288,17 +288,13 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-  <script>// Initialize collapse button
-/* $(".button-collapse").sideNav();
-  $('.button-collapse').sideNav({
-      menuWidth: 75%,
-      edge: 'right',
-      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      draggable: true, // Choose whether you can drag to open on touch screens,
-      onOpen: function(el) {  };});
-  $(".dropdown-trigger").dropdown({
-      hover: false;
-  });*/
+  <script>
+  $(".search_fixed_nav").click(function() {
+        $("#search").focus();
+    });
+  $(".elimate_string").click(function() {
+            $("#search").focus();
+    });
   $(".close_result").click(function() {
         $(".search_result").fadeOut(250).css("display","none");
         $(".search_nav_result").fadeOut(250).css("display","none");
