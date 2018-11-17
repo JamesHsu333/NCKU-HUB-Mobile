@@ -1,4 +1,4 @@
 # NCKU HUB Mobile
 > Mobile version
 
-**[NCKU HUB Mobile](https://jameshsu333.github.io/NCKU-HUB-Mobile/)**
+**[NCKU HUB Mobile(Use mobile open)](https://jameshsu333.github.io/NCKU-HUB-Mobile/)**
